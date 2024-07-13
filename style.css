@@ -1,0 +1,687 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(56, 182, 230, 0.62);
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: white;
+}
+
+header .fa-bars,
+header .fa-xmark {
+    display: none;
+}
+
+header .logo {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    padding-left: 2%;
+    gap: 4%;
+    /* justify-content: space-evenly; */
+}
+
+
+nav {
+    width: 100%;
+    height: 100%;
+    align-content: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    width: 18%;
+
+}
+
+nav li {
+    list-style: none;
+    font-size: clamp(1rem, 1vw, 2rem);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+nav ul a:nth-child(1) li:focus,
+nav ul a:nth-child(1) li:active {
+    background-color: skyblue;
+}
+
+nav ul a:nth-child(2) li:focus,
+nav ul a:nth-child(2) li:active {
+    background-color: lightsalmon;
+}
+
+nav ul a:nth-child(3) li:focus,
+nav ul a:nth-child(3) li:active {
+    background-color: yellowgreen;
+}
+
+nav ul a:nth-child(4) li:focus,
+nav ul a:nth-child(4) li:active {
+    background-color: rgba(0, 128, 0, 0.527);
+}
+
+nav ul a:nth-child(5) li:focus,
+nav ul a:nth-child(5) li:active {
+    background-color: rgba(0, 0, 255, 0.493);
+}
+
+
+
+#animals,
+#nature,
+#all,
+#vehicle,
+#cosmetic {
+    display: flex;
+}
+
+
+
+
+
+
+
+.image_section {
+    width: 90%;
+    margin: 0% auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 10% 0;
+    font-size: clamp(1rem, 2vw, 3rem);
+}
+
+.image_section h4 {
+    font-size: clamp(1rem, 1.4vw, 2rem);
+    text-transform: uppercase;
+}
+
+.image_section p {
+    font-size: clamp(1rem, 1vw, 3rem);
+}
+
+.image_intro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.gallery_filter {
+    display: flex;
+    gap: 60px;
+}
+
+.gallery_filter a {
+    font-size: clamp(1rem, 1.4vw, 3rem);
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.gallery_filter a:hover {
+    color: black;
+}
+
+.image_gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2%;
+}
+
+
+.image_gallery .image {
+    width: 100%;
+    height: 250px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 10%;
+    align-items: center;
+    box-shadow: 0 0 8px black;
+
+}
+
+.image_gallery .image a {
+    color: #000;
+    font-size: clamp(1rem, 2vw, 3rem);
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+}
+
+.image_gallery .image a img {
+    position: relative;
+    top: 20%;
+}
+
+
+.image_gallery .image:nth-child(1) {
+    background-image: url(images/img-01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(1):hover {
+    background-size: 500px 300px;
+}
+
+.image_gallery .image:nth-child(2) {
+    background-image: url(images/img-02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(2):hover {
+    background-size: 500px 300px;
+}
+
+.image_gallery .image:nth-child(3) {
+    background-image: url(images/img-03.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(3):hover {
+    background-size: 500px 300px;
+}
+
+.image_gallery .image:nth-child(4) {
+    background-image: url(images/img-04.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(4):hover {
+    background-size: 500px 300px;
+}
+
+.image_gallery .image:nth-child(5) {
+    background-image: url(images/img-05.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(5):hover {
+    background-size: 500px 300px;
+}
+
+.image_gallery .image:nth-child(6) {
+    background-image: url(images/img-06.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(6):hover {
+    background-size: 500px 300px;
+}
+
+.image_gallery .image:nth-child(7) {
+    background-image: url(images/img-07.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(7):hover {
+    background-size: 500px 300px;
+}
+
+.image_gallery .image:nth-child(8) {
+    background-image: url(images/img-08.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(8):hover {
+    background-size: 500px 300px;
+}
+
+.image_gallery .image:nth-child(9) {
+    background-image: url(images/img-09.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(9):hover {
+    background-size: 500px 300px;
+}
+
+.image_gallery .image:nth-child(10) {
+    background-image: url(images/img-10.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(10):hover {
+    background-size: 500px 300px;
+}
+
+.image_gallery .image:nth-child(11) {
+    background-image: url(images/img-11.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(11):hover {
+    background-size: 500px 300px;
+}
+
+.image_gallery .image:nth-child(12) {
+    background-image: url(images/img-12.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(12):hover {
+    background-size: 500px 300px;
+}
+
+.image_gallery .image:nth-child(13) {
+    background-image: url(images/img-13.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(13):hover {
+    background-size: 500px 300px;
+}
+
+.image_gallery .image:nth-child(14) {
+    background-image: url(images/img-14.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(14):hover {
+    background-size: 500px 300px;
+}
+
+.image_gallery .image:nth-child(15) {
+    background-image: url(images/img-15.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(15):hover {
+    background-size: 500px 300px;
+}
+
+.image_gallery .image:nth-child(16) {
+    background-image: url(images/img-16.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(16):hover {
+    background-size: 500px 300px;
+}
+
+.image_gallery .image:nth-child(17) {
+    background-image: url(images/tm-img-01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(17):hover {
+    background-size: 500px 500px;
+}
+
+.image_gallery .image:nth-child(18) {
+    background-image: url(images/tm-img-02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(18):hover {
+    background-size: 500px 500px;
+}
+
+.image_gallery .image:nth-child(19) {
+    background-image: url(images/tm-img-03.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(19):hover {
+    background-size: 500px 500px;
+}
+
+.image_gallery .image:nth-child(20) {
+    background-image: url(images/tm-img-04.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(20):hover {
+    background-size: 500px 500px;
+}
+
+.image_gallery .image:nth-child(21) {
+    background-image: url(images/tm-img-05.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(21):hover {
+    background-size: 500px 500px;
+}
+
+.image_gallery .image:nth-child(22) {
+    background-image: url(images/tm-img-06.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(22):hover {
+    background-size: 500px 500px;
+}
+
+.image_gallery .image:nth-child(23) {
+    background-image: url(images/tm-img-07.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(23):hover {
+    background-size: 500px 500px;
+}
+
+.image_gallery .image:nth-child(24) {
+    background-image: url(images/tm-img-08.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(24):hover {
+    background-size: 500px 500px;
+}
+
+.image_gallery .image:nth-child(25) {
+    background-image: url(images/tm-img-09.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(25):hover {
+    background-size: 500px 500px;
+}
+
+.image_gallery .image:nth-child(26) {
+    background-image: url(images/tm-img-10.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(26):hover {
+    background-size: 500px 500px;
+}
+
+.image_gallery .image:nth-child(27) {
+    background-image: url(images/tm-img-11.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(27):hover {
+    background-size: 500px 500px;
+}
+
+.image_gallery .image:nth-child(28) {
+    background-image: url(images/tm-img-12.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(28):hover {
+    background-size: 500px 500px;
+}
+
+.image_gallery .image:nth-child(29) {
+    background-image: url(images/tm-img-13.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(29):hover {
+    background-size: 500px 500px;
+}
+
+.image_gallery .image:nth-child(30) {
+    background-image: url(images/tm-img-14.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(30):hover {
+    background-size: 500px 500px;
+}
+
+.image_gallery .image:nth-child(31) {
+    background-image: url(images/tm-img-15.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(31):hover {
+    background-size: 500px 500px;
+}
+
+.image_gallery .image:nth-child(32) {
+    background-image: url(images/tm-img-16.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_gallery .image:nth-child(32):hover {
+    background-size: 500px 500px;
+}
+
+
+
+
+
+
+
+@media (max-width:1024px) {
+    .image_gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header {
+        position: relative;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        align-content: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 10vh;
+        width: 300px;
+        background-color: rgba(255, 255, 255, 0.582);
+        z-index: 4;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+        height: 10%;
+        width: 100%;
+
+    }
+
+    nav li {
+        list-style: none;
+        font-size: clamp(1rem, 1vw, 2rem);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid black;
+    }
+
+    header .fa-bars {
+        display: block;
+        align-content: center;
+        font-size: clamp(2rem, 3vw, 3rem);
+        padding-right: 4%;
+    }
+
+    header .fa-xmark {
+        align-content: center;
+        font-size: clamp(2rem, 3vw, 3rem);
+        padding-right: 4%;
+    }
+
+    :is(header:hover, header:focus-within) nav {
+        display: block;
+    }
+
+    :is(header:hover, header:focus-within) .fa-bars {
+        transform: rotateX(360deg);
+        transition: all .3s;
+        color: blue;
+    }
+
+
+    .image img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+
+@media (max-width:776px) {
+    .image img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .image_gallery {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10px;
+    }
+
+    .gallery_filter {
+        display: flex;
+        gap: 20px;
+    }
+
+    header .logo {
+        display: flex;
+        width: 2000%;
+        align-items: center;
+        padding-left: 2%;
+        gap: 4%;
+        /* justify-content: space-evenly; */
+    }
+}
+
+
+@media (max-width:448px) {
+
+    .image_gallery {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 10px;
+    }
+
+    .gallery_filter {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+
+    }
+
+
+    header .logo {
+        display: flex;
+        width: 2000%;
+        align-items: center;
+        padding-left: 2%;
+        gap: 4%;
+        height: 60%;
+        font-size: small;
+        /* justify-content: space-evenly; */
+    }
+
+    header .logo img {
+        height: 100%;
+    }
+}
